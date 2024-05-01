@@ -5,93 +5,71 @@ import AVTR2 from '../../assets/avatar2.png'
 import AVTR3 from '../../assets/avatar3.jpeg'
 import AVTR4 from '../../assets/avatar4.jpg'
 
-//import Swiper Core and required modules
-import { Pagination} from 'swiper/modules';
+// import Swiper core and required modules
+import {Pagination} from 'swiper/modules';
 
-import {Swiper, SwiperSlide} from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-//import swiper styles
+// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-const data = [
-  {
-  avatar: AVTR1,
-  name: 'Tina Snow',
-  review: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repudiandae et explicabo facere debitis dolorem dolor, tempore, vel eum error aut fugiat cum sit molestias!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, odio?'
-},
-{
-  avatar: AVTR2,
-  name: 'Shatta Walia',
-  review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quia eveniet quod maiores soluta earum, nesciunt est commodi repellat voluptas dicta error ab nobis ipsa ea ipsam.'
-},
-{
-  avatar: AVTR3,
-  name: 'Kwame Despite',
-  review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nulla minus vero saepe eaque reiciendis perferendis officiis culpa minima est!'
-},
-{
-  avatar: AVTR4,
-  name: 'Nana Ama McBrown',
-  review: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut corrupti earum incidunt, quibusdam aliquid ad ipsum! Iste atque deserunt alias odio placeat a architecto. Non quae reiciendis quibusdam rem adipisci at pariatur culpa praesentium!'
-}
-]
+ 
 
-const testimonials = () => {
+
+function testimonials() {
   return (
     <section id='testimonials'>
-      <h5>Review From Clients</h5>
+      <h5>Review From Team Members</h5>
       <h2>Testimonials</h2>
 
       <Swiper className="container testimonials_container"
-      //install Swiper modules
-      modules = {[Pagination]}
-      spaceBetween={40}
-      slidesPerView={1}
-      pagination={{clickable: true}}
-      >
-        {
-          data.map(({avatar, name, review}, index) => {
-            return (
-              <SwiperSlide key={index} className="testimonial">
-          <div className="client_avatar">
-            <img src={avatar}/>
-          </div>
-          <h5 className='client_name'>{name}</h5>
-            <small className="client_review">
-              {review}
-            </small>
+       // install Swiper modules
+       modules={[Pagination]}
+       spaceBetween={40}
+       slidesPerView={1}
+       pagination={{ clickable: true }}>
+        <SwiperSlide className="testimonial">
+         <div className="client_avatar">
+          <img src={AVTR1} alt="Avatar One" />
+         </div>
+         <h5 className="client_name">Khushi Deewania - Web Developer</h5>
+          <small className="client_review">
+          I had the pleasure of working with Ayushi Singhal on a web development project, and the experience was nothing short of exceptional. Ayushi's expertise in AI and ML shone through, transforming a complex problem into a user-friendly solution.
+          </small>
         </SwiperSlide>
-            )
-          })
-        }
-       
-        {/* <article className="testimonial">
-          <div className="client_avatar">
-            <img src={AVTR2} alt="Avatar One" />
-          </div>
-          <h5 className='client_name'>Ernest Achiever</h5>
-            <small className="client_review">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis iure inventore necessitatibus tenetur excepturi ex nisi nobis impedit placeat eaque dolorem deserunt numquam vel minima facilis odit mollitia ratione labore maiores enim eum eius delectus, illum optio. Dolorum distinctio tenetur, dolores veritatis quam hic qui.
-            </small>
-        </article>
-        <article className="testimonial">
-          <div className="client_avatar">
-            <img src={AVTR3} alt="Avatar One" />
-          </div>
-          <h5 className='client_name'>Ernest Achiever</h5>
-            <small className="client_review">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis iure inventore necessitatibus tenetur excepturi ex nisi nobis impedit placeat eaque dolorem deserunt numquam vel minima facilis odit mollitia ratione labore maiores enim eum eius delectus, illum optio. Dolorum distinctio tenetur, dolores veritatis quam hic qui.
-            </small>
-        </article>
-        <article className="testimonial">
-          <div className="client_avatar">
-            <img src={AVTR4} alt="Avatar One" />
-          </div>
-          <h5 className='client_name'>Ernest Achiever</h5>
-            <small className="client_review">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis iure inventore necessitatibus tenetur excepturi ex nisi nobis impedit placeat eaque dolorem deserunt numquam vel minima facilis odit mollitia ratione labore maiores enim eum eius delectus, illum optio. Dolorum distinctio tenetur, dolores veritatis quam hic qui.
-            </small>
-        </article> */}
+
+        <SwiperSlide className="testimonial">
+         <div className="client_avatar">
+          <img src={AVTR2} alt="Avatar One" />
+         </div>
+         <h5 className="client_name">Harshita Khurana - Health Tech Enthusiast</h5>
+          <small className="client_review">
+          Ayushi's project is a game-changer in the health tech industry. It addresses the discomfort associated with invasive health metrics using AI and ML, and the results are astounding.
+          </small>
+        </SwiperSlide>
+
+        <SwiperSlide className="testimonial">
+         <div className="client_avatar">
+          <img src={AVTR3} alt="Avatar One" />
+         </div>
+         <h5 className="client_name">Vardhan Singhal - User Experience Designer</h5>
+          <small className="client_review">
+          Working on a project with Ayushi was a delightful experience. Their commitment to improving user comfort and convenience in health monitoring is evident in their work. 
+          </small>
+        </SwiperSlide>
+
+        <SwiperSlide className="testimonial">
+         <div className="client_avatar">
+          <img src={AVTR4} alt="Avatar One" />
+         </div>
+         <h5 className="client_name">Vinay Garg - Software Engineer</h5>
+          <small className="client_review">
+          I had the privilege of collaborating with Ayushi on a project, and I was thoroughly impressed by their technical skills and problem-solving abilities. 
+          </small>
+        </SwiperSlide>
+        
+
+     
       </Swiper>
     </section>
   )

@@ -23,23 +23,29 @@ const About = () => {
             <article className='about_card'>
               <FaAward className='about_icon'/>
               <h5>Experience</h5>
-              <small>3+ years Working</small>
+              <small>Fresher</small>
             </article>
 
             <article className='about_card'>
               <FiUsers className='about_icon'/>
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <h5>Hackathons</h5>
+              <small>75+ Hackathons</small>
             </article>
 
             <article className='about_card'>
               <VscFolderLibrary className='about_icon'/>
               <h5>Projects</h5>
-              <small>80+ Completed Projects</small>
+              <small>7+ Completed Projects</small>
             </article>
           </div>
 
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quos suscipit mollitia recusandae sed facere autem, cum deleniti aspernatur beatae ex omnis ratione similique error, odio quia qui! Quasi, consequatur?</p>
+          <p>Hello, I'm Ayushi Singhal, a driven technologist with expertise in web development and problem-solving. Proficient in programming languages like C, C++, JavaScript, React JS and Python, I specialize in crafting dynamic and user-friendly web applications.
+
+My journey is marked by a passion for innovation. Projects like 'tie-NOT-women,' empowering athletes, and 'Doctor At Doorstep,' utilizing machine learning for healthcare, highlight my ability to find practical solutions to complex challenges.
+
+I'm a continuous learner, with training in Data Science, Machine Learning, and blockchain. Leadership roles, including Technical Head at Enterpreneurship Cell, have honed my teamwork and communication skills.
+
+My portfolio reflects my dedication to transforming ideas into impactful technology. Explore my work to see how I shape the future of tech.</p>
 
           <a href="#contact" className='btn btn-primary'> Let's Talk</a>
         </div>
